@@ -44,15 +44,6 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 DATABASES = {
     "default": env.db("DATABASE_URL", default="postgres://localhost/portfex")
 }
-           
-#    {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'portfex',
-#        'USER': 'postgres',
-#        'PASSWORD': 'password',
-#        'HOST': '127.0.0.1',
-#        'PORT': '5432',
-#    }
 
 
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
@@ -82,7 +73,7 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-]
+    ]
 
 LOCAL_APPS = [
     "portfex.users.apps.UsersConfig",
@@ -277,7 +268,6 @@ ACCOUNT_EMAIL_VERIFICATION = "optional"
 ACCOUNT_ADAPTER = "portfex.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "portfex.users.adapters.SocialAccountAdapter"
-
 
 # Your stuff...
 # ------------------------------------------------------------------------------
