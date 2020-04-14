@@ -13,6 +13,33 @@
       {% if object.name %}
         <p>{{ object.name }}</p>
       {% endif %}
+      {% if object.first_name%}
+      <p>{{ object.first_name}}</p>
+      {% endif %}
+      {% if object.last_name %}
+      <p>{{ object.last_name}}</p>
+      {% endif %}
+      {% if object.dob%}
+      <p>{{ object.dob }}</p>
+      {% endif %}
+      {% if object.address  %}
+      <p>{{ object.address }}</p>
+      {% endif %}
+      {% if object.town_or_city  %}
+      <p>{{ object.town_or_city}}</p>
+      {% endif %}
+      {% if object.zipcode%}
+      <p>{{ object.zipcode  }}</p>
+      {% endif %}
+      {% if object.country%}
+      <p>{{ object.country}}</p>
+      {% endif %}
+      {% if object.tax_residency  %}
+      <p>{{ object.tax_residency}}</p>
+      {% endif %}
+      {% if object.kyc_last_date %}
+      <p>{{ object.kyc_last_date     }}</p>
+      {% endif %}
     </div>
   </div>
 
