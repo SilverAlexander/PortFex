@@ -1,5 +1,5 @@
 # PortFex
-Demo project for Django Cookiecutter
+Demo project
 
 This is a demo securities and FX portfolio management project to work on setting up a full stack website.
 
